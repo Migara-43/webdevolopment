@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Game Page</title>
+  <link rel="stylesheet" href="c:\Users\USER\Downloads\gaming_website\styles\Upcoming_games_page.css.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fontawesome.com/icons/user-large?f=classic&s=solid" rel="stylesheet">
+  <link href="https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid" rel="stylesheet">
+  <link href="https://fontawesome.com/icons/bars?f=classic&s=solid" rel="stylesheet">
+</head>
+<header class="navbar-desktop">
+  <nav>
+    <div class="navbar-desktop">
+        <div class="navbar-desktop-section">
+            <img src="c:\Users\USER\Downloads\gaming_website\images\desktop_nav_logo.jpg" alt="Gaming Store Logo" class="navbar-logo-desktop" onclick="location.href='index.html'">
+            <button><a href="c:\Users\USER\Downloads\gaming_website\index.html">Home</a></button>
+            <div class="dropdown-desktop">
+                <button class="dropdown-toggle-desktop">Games<d class="fa-solid fa-chevron-down"></d></button>
+                <div class="dropdown-menu-desktop">
+                  <a href="c:\Users\USER\Downloads\gaming_website\game_page.html.html">Popular Games</a>
+                  <a href="c:\Users\USER\Downloads\gaming_website\upcoming_games_page.html.html">Upcoming Games</a>
+                  <a href="c:\Users\USER\Downloads\gaming_website\online_games_page.html.html">Online Games</a>
+                </div>
+              </div>
+            <div class="search-bar-desktop">
+                <input type="text" placeholder="Search...">
+            </div>
+            <button class="login-desktop"><a href="c:\Users\USER\Downloads\gaming_website\login_page.html.html">login</a></button>
+        </div>
+        <div class="navbar-below-desktop">
+            <a href="c:\Users\USER\Downloads\gaming_website\about_us_page.html.html">About Us</a>
+            <a href="c:\Users\USER\Downloads\gaming_website\contact_page.html.html">Contact</a>
+            <a href="c:\Users\USER\Downloads\gaming_website\gaming_consoles_page.html.HTML">Gaming Consoles</a>
+            <a href="c:\Users\USER\Downloads\gaming_website\gaming_peripherals_page.html.HTML">Gaming Peripherals</a>
+            <a href="c:\Users\USER\Downloads\gaming_website\faq_page.html.html">Queries & FAQ</a>
+        </div>
+    </div>
+
+</nav>
+</header>
+
+<!-- Mobile Navigation Bar -->
+<header class="navbar-mobile">
+  <nav>
+    <div class="nav-header-mobile">
+        <img src="c:\Users\USER\Downloads\gaming_website\images\razer-emblem.jpg" class="navbar-logo-mobile" onclick="location.href='index.html.html'">
+        <div class="nav-buttons-mobile">
+            <button onclick="toggleSearch()"><e class="fa-solid fa-magnifying-glass"></e></button>
+            <button onclick="toggleMenu()"><m class="fa-solid fa-bars"></m></button>
+            <button onclick="location.href='login_page.html.html'" class="login-mobile"><i class="fa-solid fa-user-large"></i></button>
+        </div>
+    </div>
+    <input type="text" class="search-bar-dropdown-mobile" placeholder="Search...">
+    <div class="menu-dropdown-mobile">
+        <a href="c:\Users\USER\Downloads\gaming_website\index.html">Home</a>
+        <a href="c:\Users\USER\Downloads\gaming_website\game_page.html.html">Popular Games</a>
+        <a href="c:\Users\USER\Downloads\gaming_website\upcoming_games_page.html.html">Upcoming games</a>
+        <a href="c:\Users\USER\Downloads\gaming_website\online_games_page.html.html">Online games</a>
+        <a href="c:\Users\USER\Downloads\gaming_website\gaming_consoles_page.html.HTML">Gaming Consoles</a>
+        <a href="c:\Users\USER\Downloads\gaming_website\gaming_peripherals_page.html.HTML">Gaming Peripherals</a>
+        <a href="c:\Users\USER\Downloads\gaming_website\about_us_page.html.html">About us</a>
+        <a href="c:\Users\USER\Downloads\gaming_website\contact_page.html.html">Contact</a>
+        <a href="c:\Users\USER\Downloads\gaming_website\faq_page.html.html">Queries & FAQ</a>
+        <a href="c:\Users\USER\Downloads\gaming_website\login_page.html.html">Login</a>
+    </div>
+</nav>
+</header>
+
+<script>
+    function toggleSearch() {
+        const searchBar = document.querySelector('.search-bar-dropdown-mobile');
+        searchBar.style.display = searchBar.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function toggleMenu() {
+        const menuDropdown = document.querySelector('.menu-dropdown-mobile');
+        menuDropdown.style.display = menuDropdown.style.display === 'flex' ? 'none' : 'flex';
+    }
+</script>
+
+<body>
+  <main>
+      <section class="hero">
+    <h1>Upcoming Games </h1>
+  </section>
+  <section class="intro-section">
+    <div class="intro-section-box">
+      <div class="intro-section-image">
+        <div class="image-slideshow">
+          <img src="c:\Users\USER\Downloads\gaming_website\images\game_8.jpg" class="slide active" alt="Peripheral 1">
+          <img src="c:\Users\USER\Downloads\gaming_website\images\game_9.jpg" class="slide" alt="Peripheral 2">
+          <img src="c:\Users\USER\Downloads\gaming_website\images\game_10.jpeg" class="slide" alt="Peripheral 3">
+        </div>
+      </div>
+      <div class="intro-section-text">
+        <h2>Box 3 Heading</h2>
+        <p>"Get ready for the hottest upcoming titles and new adventures in gaming."</p>
+        <div class="search-dropdown-container">
+          <input type="text" placeholder="Search..." class="search-bar">
+          <div class="dropdown">
+            <button class="dropbtn">Order</button>
+            <div class="dropdown-content">
+              <a href="#option1">Top ratings</a>
+              <a href="#option2">Lowest price</a>
+              <a href="#option3">Highest price</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="game-list">
+    <!-- Game Box -->
+    <div class="game-box">
+      <div class="game-image">
+        <img src="c:\Users\USER\Downloads\gaming_website\images\game_8.jpg" alt="Game 1">
+      </div>
+      <div class="game-content">
+        <h2>Game Title 1</h2>
+        <p>Release Date: 2025-01-12</p>
+        <p>Platforms: PC, PS5, Xbox</p>
+        <p>Price: $59.99</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="extra-info">
+        <p>More Info: An exciting new adventure with immersive graphics and gameplay that sets new standards.</p>
+        <h3 class="highlight">Special Offer: Pre-order Now!</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="game-list">
+    <!-- Game Box -->
+    <div class="game-box">
+      <div class="game-image">
+        <img src="c:\Users\USER\Downloads\gaming_website\images\game_9.jpg" alt="Game 1">
+      </div>
+      <div class="game-content">
+        <h2>Game Title 1</h2>
+        <p>Release Date: 2025-01-12</p>
+        <p>Platforms: PC, PS5, Xbox</p>
+        <p>Price: $59.99</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="extra-info">
+        <p>
+          More Info: An exciting new adventure with immersive graphics and gameplay that sets new standards.
+        </p>
+        <h3 class="highlight">Special Offer: Pre-order Now!</h3>
+      </div>
+    </div>
+  </section>
+  
+  <section class="game-list">
+    <!-- Game Box -->
+    <div class="game-box">
+      <div class="game-image">
+        <img src="c:\Users\USER\Downloads\gaming_website\images\game_10.jpeg" alt="Game 1">
+      </div>
+      <div class="game-content">
+        <h2>Game Title 1</h2>
+        <p>Release Date: 2025-01-12</p>
+        <p>Platforms: PC, PS5, Xbox</p>
+        <p>Price: $59.99</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="extra-info">
+        <p>
+          More Info: An exciting new adventure with immersive graphics and gameplay that sets new standards.
+        </p>
+        <h3 class="highlight">Special Offer: Pre-order Now!</h3>
+      </div>
+    </div>
+  </section>
+  
+  <section class="game-list">
+    <!-- Game Box -->
+    <div class="game-box">
+      <div class="game-image">
+        <img src="c:\Users\USER\Downloads\gaming_website\images\game_11.jpg" alt="Game 1">
+      </div>
+      <div class="game-content">
+        <h2>Game Title 1</h2>
+        <p>Release Date: 2025-01-12</p>
+        <p>Platforms: PC, PS5, Xbox</p>
+        <p>Price: $59.99</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="extra-info">
+        <p>
+          More Info: An exciting new adventure with immersive graphics and gameplay that sets new standards.
+        </p>
+        <h3 class="highlight">Special Offer: Pre-order Now!</h3>
+      </div>
+    </div>
+  </section> 
+  <section class="game-list">
+    <!-- Game Box -->
+    <div class="game-box">
+      <div class="game-image">
+        <img src="c:\Users\USER\Downloads\gaming_website\images\game_7.jpeg" alt="Game 1">
+      </div>
+      <div class="game-content">
+        <h2>Game Title 1</h2>
+        <p>Release Date: 2025-01-12</p>
+        <p>Platforms: PC, PS5, Xbox</p>
+        <p>Price: $59.99</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="extra-info">
+        <p>
+          More Info: An exciting new adventure with immersive graphics and gameplay that sets new standards.
+        </p>
+        <h3 class="highlight">Special Offer: Pre-order Now!</h3>
+      </div>
+    </div>
+  </section> 
+
+  <section class="games-shortcut">
+    <div class="games-shortcut-layout">
+      <p class="games-shortcut-description">Have questions? Visit our FAQ page to find answers to common inquiries and get the help you need.</p>
+        <a href="faq.html" class="games-shortcut-button">Queries and FAQ Page</a>
+    </div>
+</section>
+<section class="games-shortcut">
+  <div class="games-shortcut-layout">
+    <p class="games-shortcut-description">Have questions? Visit our FAQ page to find answers to common inquiries and get the help you need.</p>
+      <a href="faq.html" class="games-shortcut-button">Queries and FAQ Page</a>
+  </div>
+</section> 
+</body>
+</main>
+<footer class="footer">
+  <!-- Footer Top Section -->
+  <div class="footer-top">
+
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="c:\Users\USER\Downloads\gaming_website\images\razer-emblem.jpg" alt="Logo" class="navbar-logo-desktop" onclick="location.href='index.html'">
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-contact">
+      <p>Contact us:</p>
+      <p>Email: contact@example.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+
+    <div class="footer-contact">
+      <p>Contact us:</p>
+      <p>Email: contact@example.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+
+    <div class="footer-contact">
+      <p>Contact us:</p>
+      <p>Email: contact@example.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+
+
+
+    <!-- Social Media Icons -->
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Footer Bottom Section -->
+  <div class="footer-bottom">
+    <a href="c:\Users\USER\Downloads\gaming_website\index.html">Home</a>
+    <a href="c:\Users\USER\Downloads\gaming_website\about_us_page.html.html">About us</a>
+    <a href="c:\Users\USER\Downloads\gaming_website\game_page.html.html">Popular Games</a>
+    <a href="c:\Users\USER\Downloads\gaming_website\upcoming_games_page.html.html">Upcoming games</a>
+    <a href="c:\Users\USER\Downloads\gaming_website\online_games_page.html.html">Online games</a>
+    <a href="c:\Users\USER\Downloads\gaming_website\gaming_consoles_page.html.HTML">Gaming Consoles</a>
+    <a href="c:\Users\USER\Downloads\gaming_website\gaming_peripherals_page.html.HTML">Gaming Peripherals</a>
+    <a href="c:\Users\USER\Downloads\gaming_website\contact_page.html.html">Contact</a>
+    <a href="c:\Users\USER\Downloads\gaming_website\faq_page.html.html">Queries & FAQ</a>
+    <a href="c:\Users\USER\Downloads\gaming_website\login_page.html.html">Login</a>
+  </div>
+</footer>
+</html>
